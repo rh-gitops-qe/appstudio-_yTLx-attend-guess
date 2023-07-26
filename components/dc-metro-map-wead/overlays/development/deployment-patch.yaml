@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-wead
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh-gitops-bot/release-e2e-deploy-tenant/appstudio/dc-metro-map-wead@sha256:24387a6f4106a94cd4904464db4e52f8299cda1369cd0f52954adabe673f68ad
+        name: my-nodejs
+        resources: {}
+status: {}
